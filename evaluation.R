@@ -24,9 +24,9 @@ plot(roc_curve_test, col = 'red', main = "CRC Predictive Model", xlim = c(1,0))
 text(x = 0.25, y = 0.25, "AUC: 0.77")
 
 #density plots
-data_calibration <- data.frame(predicted_probabilities = test$prob.test.mean, true_labels = as.factor(y.test))
+density_df <- data.frame(predicted_probabilities = test$prob.test.mean, true_labels = as.factor(y.test))
 
-ggplot(data_calibration, aes(x = predicted_probabilities, fill = true_labels)) +
+ggplot(density_df, aes(x = predicted_probabilities, fill = true_labels)) +
   geom_density(alpha = 0.6) +
   scale_fill_manual(values = c("blue", "red"), labels = c("Healthy", "CRC")) +
   labs(x = "Predicted Probability", y = "Density", fill = "Class") +
