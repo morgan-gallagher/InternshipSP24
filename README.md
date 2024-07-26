@@ -16,3 +16,5 @@ This repository contains the code I used to complete MEIN40400 at UCD. The files
 The script **functions.R** contains helper functions to run the above scripts. 
 
 We also evaluated the performance of BART in a multicategorical setting in **multiclass.R**
+
+The profiles of the selected bacteria for the CRC and adenoma predictive models are viewable in R. 
