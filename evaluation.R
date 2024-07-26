@@ -30,7 +30,7 @@ ggplot(density_df, aes(x = predicted_probabilities, fill = true_labels)) +
   geom_density(alpha = 0.6) +
   scale_fill_manual(values = c("blue", "red"), labels = c("Healthy", "CRC")) +
   labs(x = "Predicted Probability", y = "Density", fill = "Class") +
-  xlim(0, 1) +  # Set x-axis limits from 0 to 1
+  xlim(0, 1) + 
   theme_minimal()
 
 
