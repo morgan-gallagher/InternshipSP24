@@ -4,11 +4,11 @@ This repository contains the code I used to complete MEIN40400 at UCD. The files
 1. **data_preparation.R**  
    Processes normalized count data obtained from Obón-Santacana et al. (2022).
 2. **grid_search.R**  
-   Performs grid search over parameters and records associated AUCs.
+   Performs grid search over parameters and records associated AUCs to select best model.
 3. **models.R**  
-   Builds BART classifiers using best performing hyperparameters.
+   Performs cross validation on BART model with selected parameters (train) and runs BART model on test data.
 4. **evaluation.R**  
-   Evaluates the BART classifiers and produces ROC curves and density plots.
+   Evaluates the BART classifiers on test data and produces ROC curves and density plots.
 5. **var_selection.R**  
    Performs variable selection and evaluates BART model using selected variables.
 
